@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Welcome To my website" />
+    <link rel="stylesheet" href="styles.css" />
+    <style></style>
+  </head>
+  <body>
+    <section id="boss">
+      <div id="divShadow"></div>
+      <div id="myspace">
+        <div></div>
+        <div></div>
+        <div></div>
+        <input type="text" id="inp1" />
+        <input type="text" id="inp2" />
+        <input type="text" id="inp3" />
+      </div>
+
+      <label>Score:</label><input type="text" id="score" readonly value="0" />
+      <label>High Score:</label
+      ><input type="text" id="High-score" readonly value="6500" />
+      <label>Your Chance:</label
+      ><input type="text" id="chance" readonly value="15" />
+      <label>Golden Chance:</label
+      ><input type="text" id="golden" readonly value="0" />
+      <div id="msg">You're Welcome</div>
+      <img src="icons/replay.png" id="replay" onclick="rep()" />
+      <div id="spindiv">
+        <button id="spin">SPIIIIN</button>
+        <span></span>
+      </div>
+      <span></span>
+      <button id="returnToInfo">Return</button>
+    </section>
+
+    <section id="info">
+      <h1>Welcome To OneSpin</h1>
+      <p>
+        Hello, Chrome peut vous aider à vous protéger entre autres contre les
+        violations de données et les extensions malveillantes Chrome peut vous
+        aider à vous protéger entre autres contre les violations de données et
+        les extensions malveillantes Chrome peut vous aider à vous protéger
+        entre autres contre les violations de données et les extensions
+        malveillantes Chrome peut vous aider à vous protéger entre autres contre
+        les violations de données et les extensions malveillantes
+      </p>
+      <div id="msgInfo">Please, Enter Your Name Before Start !!</div>
+
+      <button id="letsStartGame">Let's Start Game</button>
+
+      <input type="text" id="myName" placeholder="Enter Your name" />
+      <button id="returnToChoice">Return</button>
+    </section>
+
+    <section id="choice">
+      <img src="Background/choicegif.gif" />
+      <div id="divshadow"></div>
+      <button id="StartGame">Start Game</button>
+      <button id="Scores">Scores</button>
+      <button id="Settings">Setting</button>
+      <a href="" id="Quit"><button>Quit</button></a>
+    </section>
+
+    <section id="Load">
+      <h1>LOADING...</h1>
+      <label id="lab1">100%</label>
+      <div id="loading"></div>
+    </section>
+
+    <section id="Lancer">
+      <img src="Background/namelancer.jpg" />
+    </section>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>

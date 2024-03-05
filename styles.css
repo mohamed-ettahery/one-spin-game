@@ -1,0 +1,612 @@
+*
+{
+	box-sizing: border-box;
+	margin: 0;
+	outline: none;
+}
+#boss 
+{
+	max-width: 100%;
+	height: 657px;
+/*	background: #0177D5;*/
+	background: url('Background/backboss.jpg') no-repeat;
+	background-size:cover;
+	border: 2px solid #98097F;
+	overflow: hidden;
+
+}
+#boss #divShadow
+{
+	background: rgba(0,0,0,0.7);
+	position: absolute;
+	 top: 0;
+	 left: 0;
+	width: 100%;
+	height:100%;
+}
+#boss  #myspace
+{
+	width: 500px;
+	height: 260px;
+/*	background: #FF0098;*/
+	background: rgba(255, 0, 152,0.7);
+	margin: 200px auto;
+	border: 2px solid #FFF;
+	position: relative;
+	border-radius: 20px;
+}
+#boss  #myspace input,#boss  #myspace div
+{
+	
+	width: 128px;
+	height: 200px;
+	font-size: 0px;
+	position: absolute;
+	 top: 5%;
+	border-radius: 30px;
+	background-color:#FFF;
+	color: #031050;
+	text-align: center;
+	transition: 1s;
+	overflow: hidden;
+	border: none;
+
+}
+#boss  #myspace input
+{
+	 top: 10%;
+	width: 130px;
+}
+#boss  #myspace div
+{
+	height: 230px;
+	border: 2px solid #C73255;
+	width: 150px;
+}
+#boss  #myspace div:first-of-type
+{
+	left: 3%;
+
+}
+#boss  #myspace input:first-of-type
+{
+	left: 5%;
+}
+#boss  #myspace div:nth-of-type(2)
+{
+	left: 35%;
+
+}
+#boss  #myspace input:nth-of-type(2)
+{
+	left: 37%;
+}
+#boss  #myspace div:nth-of-type(3)
+{
+	right:3%;
+
+}
+#boss  #myspace input:nth-of-type(3)
+{
+	right:5%;
+}
+#boss  #myspace div:first-of-type
+{
+	left: 3%;
+}
+#spindiv 
+{
+	position: relative;
+	 top: -70%;
+	 left: 80%;
+	width: 400px;
+	height: 400px;
+
+}
+#boss #spindiv button[id="spin"]
+{
+	
+	position: absolute;
+/*
+	 right: 10%;
+	 top: 25%;
+*/
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: #891917;
+	color: azure;
+	cursor: pointer;
+	animation: moving 1.5s infinite;
+	
+}
+
+#boss #spindiv button[id="spin"]:hover
+{
+	transform: scale(1.1);
+	animation: paused;
+
+}
+#spindiv span:first-of-type
+{
+	display: block;
+	width: 15px;
+	height: 130px;
+	background: #891917;
+	position: absolute;
+	 top:20%;
+	 left: 10%;
+	
+}
+#boss span 
+{
+	background: #891917;
+	display: block;
+	width: 80px;
+	height: 50px;
+	position: absolute;
+	 bottom: 30%;
+	 right: 14%;
+	
+	border-radius: 20px 20px 0 0;
+}
+.spinmove
+{
+	animation: spinmove 1s 1;
+}
+@keyframes spinmove
+{
+	from{
+		
+	}
+	to
+	{
+		transform: rotate(30deg);
+			 top: -55%;
+	         left: 80%;
+	}
+}
+@keyframes moving
+{
+	0%,100%
+	{
+		opacity:1;
+	}
+	50%
+	{
+		
+		box-shadow: 5px 5px 5px #B81C03,
+			          -5px -5px 5px #B81C03 ;
+		transform: rotate(30deg);
+	}
+	80%
+	{
+		transform: rotate(-30deg);
+	}
+	
+}
+.moving
+{
+	animation: move 1s 1;
+}
+@keyframes move
+{
+	from
+	{
+		opacity: 1;
+	}
+	to
+	{
+		transform: rotateX(360deg);
+	}
+}
+
+#boss button[id="returnToInfo"]
+{
+	width: 150px;
+	height: 50px;
+	padding: 15px;
+	position: absolute;
+	 bottom: 0.5%;
+	 left: 0.1%;
+	background: #E7157C;
+	color:#FFF;
+	cursor: pointer;
+	border-radius: 0 50px 0 0;
+	font-weight: bold;
+	font-size: 17px;
+	transition: font .5s;
+	border: 1px solid #D8236A;
+}
+#boss button[id="returnToInfo"]:hover
+{
+	font-size: 19px;
+}
+/*****************************************/
+
+#boss  label:first-of-type,section label:nth-of-type(2),section label:nth-of-type(3),section label:nth-of-type(4)
+{
+	color:#fff;
+	text-shadow: 4px 4px 3px #891917,
+		         -4px -4px 3px #891917;
+	position: absolute;
+	 top: 5%;
+	 left: 2%;
+	font-size: 20px;
+	font-weight: bold;
+	
+}
+#boss   label:nth-of-type(2)
+{
+	top: 25%;
+	
+}
+#boss  label:nth-of-type(3)
+{
+	left: 34%;
+	top: 5%;
+	
+}
+#boss  label:nth-of-type(4)
+{
+	left: 57%;
+	top: 5%;
+}
+
+#boss  input[id="score"],#boss  input[id="High-score"],#boss  input[id="chance"],#boss  input[id="golden"]
+{
+	position: absolute;
+	 top: 10%;
+	 left: 2%;
+	width: 150px;
+	height: 70px;
+	background-color: #202020;
+	border: 2px solid #FFF;
+	color: aliceblue;
+	text-align: center;
+	font-size: 30px;
+	line-height: 70px;
+	transition: 2s;
+}
+#boss input[id="chance"]
+{
+	width: 100px;
+	height: 40px;
+	left: 35%;
+	top: 10%;
+}
+#boss  input[id="High-score"]
+{
+	top: 31%;
+	animation: light 2s infinite;
+}
+#boss  input[id="golden"]
+{
+	width: 100px;
+	height: 40px;
+	top: 10%;
+	left: 58%;
+	animation: light 3s infinite;
+}
+@keyframes light
+{
+	0%,100%
+	{
+		opacity:1;
+	}
+	50%
+	{
+		opacity: 1;
+		text-shadow: 3px 3px 5px #E18A06,
+			          -3px -3px 5px #E18A06 ;
+	}
+}
+
+#boss  #msg
+{
+/*	border: 1px solid #FFF;*/
+	color: #FFF;
+	text-align: center;
+	font-size: 30px;
+	position: absolute;
+	 left: 56%;
+	 bottom: 18%;
+}
+#boss  img[id="replay"]
+{
+	position: absolute;
+	 right: 2%;
+	 top: 3%;
+	cursor: pointer;
+	transition: 0.4s;
+	border-radius: 50%;
+}
+/******************************/
+/*   Start info Section*/
+/******************************/
+
+#info
+{
+	max-width: 100%;
+	height: 657px;
+/*	background: #080;*/
+	background: linear-gradient(to right,#8D168E,#460A7F);
+	border: 2px solid #98097F;
+	overflow: hidden;
+	position: relative;
+	margin-top: -657px;
+	text-align: center;
+	border: 2px solid #09987F;
+
+}
+#info h1
+{
+	padding: 10px;
+	margin-top: 50px;
+	color: #FFF;
+}
+#info p
+{
+	padding: 30px;
+	line-height: 2;
+	color: #FFF;
+}
+#info input
+{
+	position: absolute;
+	 top: 50%;
+	 left: 41%;
+	width: 300px;
+	height: 60px;
+	padding: 15px;
+	text-align: center;
+	background: none;
+	border: 3px solid #FFF;
+	border-width: 0 3px 3px 3px;
+	border-radius: 30px;
+	color: #FFF;
+	font-size: 18px;
+}
+
+#info #msgInfo
+{
+	position: absolute;
+	 top: 63%;
+	 left: 42%;
+	font-weight: bold;
+	color: #F00;
+	visibility: hidden;
+	text-shadow: 1px 1px 4px #FFF,
+		         -1px -1px 4px #FFF;
+}
+#info button[id="letsStartGame"]
+{
+	position: absolute;
+	 top: 80%;
+	 left: 41%;
+	width: 300px;
+	height: 50px;
+	padding: 20px;
+	border-radius: 50px;
+	font-weight: bold;
+	padding-bottom: 30px;
+	color: #FFF;
+	background: #09987F;
+	cursor: pointer;
+}
+#info button[id="letsStartGame"]:hover
+{
+	background: #080;
+}
+#info button[id="returnToChoice"]
+{
+	width: 150px;
+	height: 50px;
+	padding: 15px;
+	position: absolute;
+	 bottom: 0.5%;
+	 left: 0;
+	cursor: pointer;
+	border-radius: 0 50px 0 0;
+	font-weight: bold;
+	font-size: 17px;
+	transition: font .5s;
+	background: #09987F;
+	color: #FFF;
+	border: 2px solid #09987F;
+}
+#info button[id="returnToChoice"]:hover
+{
+	font-size: 19px;
+}
+
+
+
+/******************************/
+/*   End info Section*/
+/******************************/
+
+/******************************/
+/*   Start choice Section*/
+/******************************/
+
+#choice
+{
+	max-width: 100%;
+	height: 657px;
+/*	background: #F00;*/
+	background: url('Background/choice.jpg') no-repeat 100% 100%;
+	overflow: hidden;
+	position: relative;
+	margin-top: -657px;
+
+}
+#choice button
+{
+	position: absolute;
+	 top: 30%;
+	 left: 40%;
+	width: 300px;
+	background: none;
+	color: #FFF;
+	font-size: 40px;
+	font-weight: bold;
+	border: none;
+	transition:padding .5s;
+	cursor: pointer;
+}
+#choice button:nth-of-type(2)
+{
+	top: 40%;
+}
+#choice button:nth-of-type(3)
+{
+	top: 50%;
+}
+#choice a button
+{
+	top: 60%;
+}
+#choice button:hover
+{
+	transform: scale(1.1);
+	padding-right: 35px;
+}
+#choice img
+{
+	width: 780px;
+	height: 620px;
+	position: absolute;
+	 left: 20%;
+}
+
+#choice #divshadow
+{
+	background: rgba(0,0,0,0.8);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+/******************************/
+/*   End choice Section*/
+/******************************/
+
+
+/******************************/
+/*   Start Load Section*/
+/******************************/
+
+#Load
+{
+	max-width: 100%;
+	height: 657px;
+/*	background: #98097F;*/
+	background: url('Background/load.jpg') no-repeat 100% 100%;
+	overflow: hidden;
+	position: relative;
+	margin-top: -657px;
+
+}
+#Load h1
+{
+	position: absolute;
+	 top: 60%;
+	 left: 10%;
+/*	color: #FFF;*/
+	color: #EEC026;
+	visibility: hidden;
+}
+#Load label:first-of-type
+{
+  position: absolute;
+	top: 69%;
+	left: 92%;
+	display: none;
+/*	color: #FFF;*/
+	color: #EEC026;
+}
+#Load #loading
+{
+	position: absolute;
+	 top: 70%;
+	 left:10%;
+	background: #FFF;
+	width: 1100px;
+	height: 10px;
+	visibility: hidden;
+	border: 2px solid #FFF;
+}
+#Load #loading::before
+{
+	content: "";
+/*	background: #1BA160;*/
+	background: #EEC026;
+	position: absolute;
+	 top: 0;
+	 left: 0;
+	height: 100%;
+	width: 0;
+	animation: load 13s 1;
+	animation-fill-mode: forwards;
+}
+@keyframes load
+{
+	10%{
+		width: 0%;
+	}
+	20%{
+		width: 10%;
+	}
+	30%{
+		width: 10%;
+	}
+	45%{
+		width: 15%;
+	}
+	50%{
+		width: 45%;
+	}
+	60%{
+		width: 60%;
+	}
+	75%{
+		width: 75%;
+	}
+	100%{
+		width: 100%;
+	}
+}
+
+
+/******************************/
+/*   End Load Section*/
+/******************************/
+
+/******************************/
+/*   Start Lancer Section*/
+/******************************/
+
+#Lancer
+{
+	max-width: 100%;
+	height: 657px;
+/*	background: #008;*/
+	background: url('Background/lancer.jpg') no-repeat 100% 100%;
+	overflow: hidden;
+	position: relative;
+	 left: -14px;
+	border: 5px solid #000;
+	margin-top: -657px;
+
+}
+#Lancer img
+{
+	position: absolute;
+/*	  top: 15%;*/
+	  top: -45%;
+	 left: 25%;
+}
+
+/******************************/
+/*   End Lancer Section*/
+/******************************/
